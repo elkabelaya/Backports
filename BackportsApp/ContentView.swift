@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var  searchText: String = ""
     var body: some View {
         NavigationView{
             ScrollView {
@@ -19,6 +21,7 @@ struct ContentView: View {
                 }
             }
             .backport.navigationTitle("BackportTitle")
+            .backport.searchable(text: $searchText, prompt: "Search...")
         }
     }
 }

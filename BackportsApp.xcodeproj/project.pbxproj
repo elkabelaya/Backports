@@ -10,6 +10,8 @@
 		8F3FC79A28642EEB00CE2E34 /* Backport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3FC79928642EEB00CE2E34 /* Backport.swift */; };
 		8F3FC79C28642F4900CE2E34 /* Backport+NavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3FC79B28642F4900CE2E34 /* Backport+NavigationTitle.swift */; };
 		8F3FC79E2864300F00CE2E34 /* Backport+LazyVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3FC79D2864300F00CE2E34 /* Backport+LazyVStack.swift */; };
+		8F956D70288E702800DEF748 /* ViewControllerResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F956D6F288E702800DEF748 /* ViewControllerResolver.swift */; };
+		8F956D73288E703000DEF748 /* Backport+Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F956D72288E703000DEF748 /* Backport+Searchable.swift */; };
 		8FA05EE02862E22000D50928 /* BackportsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA05EDF2862E22000D50928 /* BackportsAppApp.swift */; };
 		8FA05EE22862E22000D50928 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA05EE12862E22000D50928 /* ContentView.swift */; };
 		8FA05EE42862E22100D50928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA05EE32862E22100D50928 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 		8F3FC79928642EEB00CE2E34 /* Backport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backport.swift; sourceTree = "<group>"; };
 		8F3FC79B28642F4900CE2E34 /* Backport+NavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Backport+NavigationTitle.swift"; sourceTree = "<group>"; };
 		8F3FC79D2864300F00CE2E34 /* Backport+LazyVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Backport+LazyVStack.swift"; sourceTree = "<group>"; };
+		8F956D6F288E702800DEF748 /* ViewControllerResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerResolver.swift; sourceTree = "<group>"; };
+		8F956D72288E703000DEF748 /* Backport+Searchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Backport+Searchable.swift"; sourceTree = "<group>"; };
 		8FA05EDC2862E22000D50928 /* BackportsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackportsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA05EDF2862E22000D50928 /* BackportsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackportsAppApp.swift; sourceTree = "<group>"; };
 		8FA05EE12862E22000D50928 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,9 +54,29 @@
 			path = BeforeIOS14;
 			sourceTree = "<group>";
 		};
+		8F956D6E288E702800DEF748 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8F956D6F288E702800DEF748 /* ViewControllerResolver.swift */,
+			);
+			name = Utils;
+			path = BackportsApp/Utils;
+			sourceTree = "<group>";
+		};
+		8F956D71288E703000DEF748 /* BeforeIOS15 */ = {
+			isa = PBXGroup;
+			children = (
+				8F956D72288E703000DEF748 /* Backport+Searchable.swift */,
+			);
+			name = BeforeIOS15;
+			path = BackportsApp/BeforeIOS15;
+			sourceTree = "<group>";
+		};
 		8FA05ED32862E22000D50928 = {
 			isa = PBXGroup;
 			children = (
+				8F956D71288E703000DEF748 /* BeforeIOS15 */,
+				8F956D6E288E702800DEF748 /* Utils */,
 				8FA05EDE2862E22000D50928 /* BackportsApp */,
 				8FA05EDD2862E22000D50928 /* Products */,
 			);
@@ -162,9 +186,11 @@
 				8FA05EE22862E22000D50928 /* ContentView.swift in Sources */,
 				8FA05EE02862E22000D50928 /* BackportsAppApp.swift in Sources */,
 				8FA05EEE2862E4BE00D50928 /* SceneDelegate.swift in Sources */,
+				8F956D70288E702800DEF748 /* ViewControllerResolver.swift in Sources */,
 				8F3FC79C28642F4900CE2E34 /* Backport+NavigationTitle.swift in Sources */,
 				8F3FC79A28642EEB00CE2E34 /* Backport.swift in Sources */,
 				8F3FC79E2864300F00CE2E34 /* Backport+LazyVStack.swift in Sources */,
+				8F956D73288E703000DEF748 /* Backport+Searchable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
